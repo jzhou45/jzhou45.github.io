@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "San Francisco";
+    src: url("../fonts/San_Francisco.otf");
+}
+
+body{
+    font-family: "San Francisco";
+}

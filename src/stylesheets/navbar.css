@@ -1,0 +1,21 @@
+.navbar{
+    width: 100vw;
+    height: 44px;
+    display: sticky;
+    background-color: rgba(0,0,0,.8);
+    color: #f5f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.navbar span{
+    opacity: 0.8;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.navbar span:hover{
+    opacity: 1;
+}
