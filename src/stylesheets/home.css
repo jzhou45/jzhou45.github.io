@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "San Francisco Bold";
+    src: url(../fonts/San_Francisco_Bold.otf);
+}
+
+.home{
+    height: calc(100vh - 44px);
+    width: 100vw;
+}
+
+.home-carousel{
+    height: calc(100vh - 44px);
+    width: 100%;
+}
+
+.home-carousel div{
+    height: calc(100vh - 44px);
+    width: 100%;
+}
+
+.home-carousel img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter:brightness(0.5)
+}
+
+.word{
+    position: absolute;
+    z-index: 2;
+    left: calc(50vw - 420px);
+    top: calc(50vh - 40px);
+    width: 840px;
+    height: 80px;
+    font-size: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "San Francisco Bold";
+}
