@@ -5,7 +5,6 @@ import concat from "../images/concat.png";
 import metabook from "../images/metabook.png";
 import olympus from "../images/olympus.png";
 import "../stylesheets/home.css";
-import $ from "jquery";
 
 const Home = () => {
     return(
