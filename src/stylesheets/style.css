@@ -6,3 +6,8 @@
 body{
     font-family: "San Francisco";
 }
+
+.components{
+    display: flex;
+    flex-direction: column;
+}

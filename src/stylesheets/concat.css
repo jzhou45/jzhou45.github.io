@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Manrope Semibold";
+    src: url("../fonts/Manrope-SemiBold.ttf");
+}
+
+#concat{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#concat > :first-child, .concat-about{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#concat img{
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.concat-about > div{
+    width: 60%;
+}
+
+.concat-about h1{
+    font-family: "Manrope Semibold";
+    font-size: 30px;
+    color: #90B8F8;
+}
+
+.concat-tech{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.concat-tech span{
+    margin: 3px 0;
+}
+
+.concat-about p{
+    line-height: 1.3;
+}

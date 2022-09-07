@@ -3,19 +3,9 @@
     src: url(../fonts/San_Francisco_Bold.otf);
 }
 
-.home{
+#home, .home-carousel, .home-carousel div{
     height: calc(100vh - 44px);
     width: 100vw;
-}
-
-.home-carousel{
-    height: calc(100vh - 44px);
-    width: 100%;
-}
-
-.home-carousel div{
-    height: calc(100vh - 44px);
-    width: 100%;
 }
 
 .home-carousel img{

@@ -55,7 +55,7 @@ const Home = () => {
     });
 
     return(
-        <div className="home">
+        <div id="home">
             <Carousel
                 infiniteLoop 
                 autoPlay	
