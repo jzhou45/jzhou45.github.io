@@ -8,7 +8,7 @@
     src: url("../fonts/SFPro_italics.ttf");
 }
 
-#concat, #metabook, #olympus{
+#concat, #metabook, #olympus, #nypd{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -16,7 +16,8 @@
 
 #concat > :first-child, .concat-about, 
 .metabook-about, #metabook > :last-child, 
-#olympus > :first-child, .olympus-about{
+#olympus > :first-child, .olympus-about,
+.nypd-about, #nypd > :last-child{
     height: 100%;
     width: 50%;
     display: flex;
@@ -24,12 +25,12 @@
     align-items: center;
 }
 
-#concat img, #metabook img, #olympus img{
+#concat img, #metabook img, #olympus img, #nypd img{
     max-width: 80%;
     max-height: 80%;
 }
 
-.concat-about > div, .metabook-about > div, .olympus-about > div{
+.concat-about > div, .metabook-about > div, .olympus-about > div, .nypd-about > div{
     width: 60%;
 }
 
@@ -39,20 +40,21 @@
     color: #90B8F8;
 }
 
-.concat-tech, .metabook-tech, .olympus-tech{
+.concat-tech, .metabook-tech, .olympus-tech, .nypd-tech{
     margin: 10px 0;
     display: flex;
     flex-direction: column;
 }
 
-.concat-tech > :last-child, .metabook-tech > :last-child, .olympus-tech > :last-child{
+.concat-tech > :last-child, .metabook-tech > :last-child, .olympus-tech > :last-child,
+.nypd-tech > :last-child{
     font-family: "San Francisco Italics";
 }
 
-.concat-tech span, .metabook-about span, .olympus-about span{
+.concat-tech span, .metabook-about span, .olympus-about span, .nypd-about span{
     margin: 3px 0;
 }
 
-.concat-about p, .metabook-about p, .olympus-about p {
+.concat-about p, .metabook-about p, .olympus-about p, .nypd-about p {
     line-height: 1.3;
 }
