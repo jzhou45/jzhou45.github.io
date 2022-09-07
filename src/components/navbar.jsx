@@ -14,6 +14,9 @@ const Navbar = () => {
             case "olympus":
                 pageHeight = window.innerHeight * 3;
                 break;
+            case "nypd":
+                pageHeight = window.innerWidth * 4;
+                break
             default:
                 break;
         }
@@ -37,7 +40,7 @@ const Navbar = () => {
             <span onClick={() => scrollToComponent("concat")}>.concat</span>
             <span onClick={() => scrollToComponent("metabook")}>Metabook</span>
             <span onClick={() => scrollToComponent("olympus")}>Olympus Card-Jitsu</span>
-            <span>Visualizing NYPD Arrest Data</span>
+            <span onClick={() => scrollToComponent("nypd") }>Visualizing NYPD Arrest Data</span>
             <span>About</span>
         </nav>
     );

@@ -17,7 +17,7 @@ const NYPD = () => {
                     </div>
 
                     <p>
-                        First ever CS project made for an intro CS course at UB
+                        My first ever CS project made for an intro CS course at UB
                         during my last semester of university. This project is a
                         web application utilizing Python and JavaScript to 
                         visualize arrest data by boroughs from NYC Open Data.
