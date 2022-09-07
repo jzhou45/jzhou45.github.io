@@ -23,9 +23,9 @@ const Concat = () => {
 
                     <p>
                     .concat is a MERN stack web application that is geared 
-                    towards engineers to practice Leetcode questions 
+                    towards engineers practicing Leetcode questions 
                     collaboratively with their colleagues. Users 
-                    would create rooms which they can invite their friends into 
+                    would create rooms where they can invite their friends into 
                     with a unique room link. There, they can either choose to use 
                     one of the default 75 questions or create their own questions. 
                     After selecting a question to work on, they can go into the 
