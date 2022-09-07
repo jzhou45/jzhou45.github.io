@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Poppins Bold";
+    src: url("../fonts/Poppins-Bold.ttf");
+}
+
+.metabook-about h1{
+    font-family: "Poppins Bold";
+    font-size: 30px;
+    color: #1977f2;
+}
