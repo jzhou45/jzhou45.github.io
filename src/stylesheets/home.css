@@ -19,7 +19,8 @@
     position: absolute;
     z-index: 2;
     left: calc(50vw - 335px);
-    top: calc(50vh - 40px);
+    top: calc(50vh - 80px);
+    
     width: 670;
     height: 80px;
     color: white;
