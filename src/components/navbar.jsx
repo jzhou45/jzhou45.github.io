@@ -3,29 +3,7 @@ import "../stylesheets/navbar.css";
 
 const Navbar = () => {
     const scrollToComponent = componentId => {
-        let pageHeight;
-        switch (componentId) {
-            case "concat":
-                pageHeight = window.innerHeight;
-                break;
-            case "metabook":
-                pageHeight = window.innerHeight * 2;
-                break;
-            case "olympus":
-                pageHeight = window.innerHeight * 3;
-                break;
-            case "nypd":
-                pageHeight = window.innerHeight * 4;
-                break;
-            case "about":
-                pageHeight = window.innerHeight * 5;
-                break;
-            default:
-                break;
-        }
-
-        window.scrollTo({
-            top: pageHeight,
+        document.getElementById(componentId).scrollIntoView({
             behavior: "smooth"
         });
     };

@@ -49,6 +49,16 @@
     display: flex;
 }
 
+#about .link-buttons{
+    flex-direction: column;
+}
+
+#about .link-buttons > div{
+    display: flex;
+    width: 350px;
+    justify-content: center;
+}
+
 .link-buttons a{
     display: flex;
     align-items: center;
@@ -81,4 +91,8 @@
     border: 1px solid white;
     color: white;
     background-color: #4078c0;
+}
+
+.resume{
+    color: black;
 }

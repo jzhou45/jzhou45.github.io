@@ -31,16 +31,14 @@ const About = () => {
                         </div>
                     </div>
 
+                    <a href={resume} target="_blank" className="resume">Resume</a>
+
                     <div className="link-buttons">
                         <div>
-                            <a href={resume} target="_blank" className="abutton">Resume</a>
                             <a href="https://github.com/jzhou45" target="_blank" className="bbutton">GitHub</a>
-                        </div>
-                        
-                        <div>
-                            <a href="https://www.linkedin.com/in/jonathanzhou77/" target="_blank" className="bbutton">LinkedIn</a>
                             <a href="https://angel.co/u/jonathan-zhou-5" target="_blank" className="abutton">AngelList</a>
-                        </div>
+                            <a href="https://www.linkedin.com/in/jonathanzhou77/" target="_blank" className="bbutton">LinkedIn</a>
+                        </div>    
                     </div>
                 </div>
             </div>

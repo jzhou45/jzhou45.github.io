@@ -10,6 +10,16 @@ body{
 .components{
     display: flex;
     flex-direction: column;
+    overflow: scroll;
+    height: 100vh;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+.components > *{
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
 }
 
 .fades > *{
@@ -18,7 +28,12 @@ body{
     visibility: hidden;
     transition: opacity 1000ms ease-out, transform 1000ms ease-out;
     will-change: opacity, visibility;
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
 }
+
+
 
 .is-visible {
     opacity: 1;

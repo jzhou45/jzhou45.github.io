@@ -7,29 +7,6 @@ import Olympus from "./components/olympus";
 import NYPD from "./components/nypd";
 import About from "./components/about";
 
-const FadeInSection = ({
-  children,
-}) => {
-  const domRef = React.useRef();
-  
-  const [isVisible, setVisible] = React.useState(false);
-
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      if (entries[0].isIntersecting) {
-        setVisible(true);
-        observer.unobserve(domRef.current);
-      }
-    });
-    
-    observer.observe(domRef.current);
-    
-    return () => observer.disconnect();
-  }, []);
-
-  return (<section ref={ domRef } className={ isVisible ? ' is-visible' : '' }>{ children }</section>);
-};
-
 function App() {
   return (
     <div className="App">
@@ -38,11 +15,11 @@ function App() {
       <div className="components">
         <Home/>
         <div className="fades">
-          <FadeInSection><Concat/></FadeInSection>
-          <FadeInSection><Metabook/></FadeInSection>
-          <FadeInSection><Olympus/></FadeInSection>
-          <FadeInSection><NYPD/></FadeInSection>
-          <FadeInSection><About/></FadeInSection>
+          <div className="is-visible"><Concat/></div>
+          <div className="is-visible"><Metabook/></div>
+          <div className="is-visible"><Olympus/></div>
+          <div className="is-visible"><NYPD/></div>
+          <div className="is-visible"><About/></div>
         </div>
       </div>
     </div>
