@@ -2,6 +2,7 @@ import Navbar from "./components/navbar";
 import Home from "./components/home";
 import Concat from "./components/concat";
 import Metabook from "./components/metabook";
+import Olympus from "./components/olympus";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Home/>
         <Concat/>
         <Metabook/>
+        <Olympus/>
       </div>
     </div>
   );

@@ -8,52 +8,6 @@ import "../stylesheets/home.css";
 import $ from "jquery";
 
 const Home = () => {
-    let words =["Hi there,", "I'm Jonathan", "Welcome to my page!"],
-    part,
-    i = 0,
-    offset = 0,
-    len = words.length,
-    forwards = true,
-    skip_count = 0,
-    skip_delay = 15,
-    speed = 120;
-
-    const wordflick = () => {
-        setInterval(() => {
-            if (forwards) {
-                if (offset >= words[i].length){
-                    ++skip_count;
-                    if (skip_count === skip_delay){
-                        forwards = false;
-                        skip_count = 0;
-                    };
-                };
-            } else{
-                if (offset === 0){
-                    forwards = true;
-                    i++;
-                    offset = 0;
-                    if (i >= len){
-                        i = 0;
-                    };
-                };
-            };
-            part = words[i].substring(0, offset);
-            if (skip_count === 0){
-                if (forwards){
-                    offset++
-                } else{
-                    offset--
-                };
-            };
-            $('.word').text(part);
-        }, speed);
-    };
-
-    $(function () {
-        wordflick();
-    });
-
     return(
         <div id="home">
             <Carousel
@@ -79,7 +33,7 @@ const Home = () => {
                 </div>
             </Carousel>
 
-            <div className="word"></div>
+            <h1 className="word">Jonathan Zhou</h1>
         </div>
     );
 };

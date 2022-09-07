@@ -20,7 +20,7 @@ const Navbar = () => {
             <span onClick={scrollToTop}>Home</span>
             <span onClick={() => scrollToComponent("concat")}>.concat</span>
             <span onClick={() => scrollToComponent("metabook")}>Metabook</span>
-            <span>Olympus Card-Jitsu</span>
+            <span onClick={() => scrollToComponent("olympus")}>Olympus Card-Jitsu</span>
             <span>Visualizing NYPD Arrest Data</span>
             <span>About</span>
         </nav>

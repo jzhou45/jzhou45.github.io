@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Caesar Dressing";
+    src: url("../fonts/CaesarDressing-Regular.ttf");
+}
+
+.olympus-about h1{
+    font-family: "Caesar Dressing";
+    font-size: 30px;
+    color: #c6934b;
+}
