@@ -33,6 +33,8 @@ const Home = () => {
             </Carousel>
 
             <h1 className="word">Jonathan Zhou</h1>
+
+            <div id="gotohome">dboqwbfdoqwbofbdqow</div>
         </div>
     );
 };

@@ -17,7 +17,7 @@ const Navbar = () => {
     
     return(
         <nav className="navbar">
-            <span onClick={scrollToTop}>Home</span>
+            <span onClick={() => scrollToComponent("gotohome")}>Home</span>
             <span onClick={() => scrollToComponent("concat")}>.concat</span>
             <span onClick={() => scrollToComponent("metabook")}>Metabook</span>
             <span onClick={() => scrollToComponent("olympus")}>Olympus Card-Jitsu</span>
