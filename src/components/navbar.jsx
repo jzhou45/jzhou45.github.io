@@ -3,7 +3,23 @@ import "../stylesheets/navbar.css";
 
 const Navbar = () => {
     const scrollToComponent = componentId => {
-        document.getElementById(componentId).scrollIntoView({
+        let pageHeight;
+        switch (componentId) {
+            case "concat":
+                pageHeight = window.innerHeight;
+                break;
+            case "metabook":
+                pageHeight = window.innerHeight * 2;
+                break;
+            case "olympus":
+                pageHeight = window.innerHeight * 3;
+                break;
+            default:
+                break;
+        }
+
+        window.scrollTo({
+            top: pageHeight,
             behavior: "smooth"
         });
     };
