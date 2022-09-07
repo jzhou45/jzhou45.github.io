@@ -5,6 +5,7 @@ import Concat from "./components/concat";
 import Metabook from "./components/metabook";
 import Olympus from "./components/olympus";
 import NYPD from "./components/nypd";
+import About from "./components/about";
 
 const FadeInSection = ({
   children,
@@ -41,6 +42,7 @@ function App() {
           <FadeInSection><Metabook/></FadeInSection>
           <FadeInSection><Olympus/></FadeInSection>
           <FadeInSection><NYPD/></FadeInSection>
+          <FadeInSection><About/></FadeInSection>
         </div>
       </div>
     </div>

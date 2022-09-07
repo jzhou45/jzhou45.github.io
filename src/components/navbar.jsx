@@ -15,7 +15,7 @@ const Navbar = () => {
                 pageHeight = window.innerHeight * 3;
                 break;
             case "nypd":
-                pageHeight = window.innerWidth * 4;
+                pageHeight = window.innerHeight * 4;
                 break
             default:
                 break;

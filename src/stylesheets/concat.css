@@ -8,7 +8,7 @@
     src: url("../fonts/SFPro_italics.ttf");
 }
 
-#concat, #metabook, #olympus, #nypd{
+#concat, #metabook, #olympus, #nypd, #about{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -17,7 +17,8 @@
 #concat > :first-child, .concat-about, 
 .metabook-about, #metabook > :last-child, 
 #olympus > :first-child, .olympus-about,
-.nypd-about, #nypd > :last-child{
+.nypd-about, #nypd > :last-child,
+#about > :first-child, .about{
     height: 100%;
     width: 50%;
     display: flex;
@@ -40,7 +41,7 @@
     color: #90B8F8;
 }
 
-.concat-tech, .metabook-tech, .olympus-tech, .nypd-tech{
+.concat-tech, .metabook-tech, .olympus-tech, .nypd-tech, .about-education {
     margin: 10px 0;
     display: flex;
     flex-direction: column;
@@ -51,7 +52,7 @@
     font-family: "San Francisco Italics";
 }
 
-.concat-tech span, .metabook-about span, .olympus-about span, .nypd-about span{
+.concat-tech span, .metabook-about span, .olympus-about span, .nypd-about span, .about span{
     margin: 3px 0;
 }
 
