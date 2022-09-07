@@ -24,6 +24,11 @@ const Metabook = () => {
                         posts from their newsfeed and profile page, and update thier 
                         profile.
                     </p>
+
+                    <div className="link-buttons">
+                        <a href="https://github.com/jzhou45/metabook" target="_blank" className="bbutton">GitHub</a>
+                        <a href="https://metabookclone.herokuapp.com/#/" target="_blank" className="abutton">Demo</a>
+                    </div>
                 </div>
             </div>
 

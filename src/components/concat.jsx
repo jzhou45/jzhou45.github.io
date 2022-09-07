@@ -33,6 +33,11 @@ const Concat = () => {
                         that allows for easy communication as well as live share of 
                         IDE to make it easy to work together.
                     </p>
+
+                    <div className="link-buttons">
+                        <a href="https://github.com/jzhou45/.concat" target="_blank" className="bbutton">GitHub</a>
+                        <a href="https://concat-mern.herokuapp.com/#/" target="_blank" className="abutton">Demo</a>
+                    </div>
                 </div>
             </div>
         </div>

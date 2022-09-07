@@ -30,6 +30,11 @@ const Olympus = () => {
                         a client-side project, the opponenet will be a simple A.I., 
                         rather than an opposing player.
                     </p>
+
+                    <div className="link-buttons">
+                        <a href="https://github.com/jzhou45/Olympus-Card-Jitsu" target="_blank" className="bbutton">GitHub</a>
+                        <a href="https://jzhou45.github.io/Olympus-Card-Jitsu/" target="_blank" className="abutton">Demo</a>
+                    </div>
                 </div>
             </div>
         </div>

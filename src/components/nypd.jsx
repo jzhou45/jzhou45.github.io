@@ -22,6 +22,10 @@ const NYPD = () => {
                         web application utilizing Python and JavaScript to 
                         visualize arrest data by boroughs from NYC Open Data.
                     </p>
+
+                    <div className="link-buttons">
+                        <a href="https://github.com/jzhou45/Visualizing_NYPD_Arrest_Data" target="_blank" className="bbutton">GitHub</a>
+                    </div>
                 </div>
             </div>
 

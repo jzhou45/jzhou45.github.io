@@ -16,7 +16,10 @@ const Navbar = () => {
                 break;
             case "nypd":
                 pageHeight = window.innerHeight * 4;
-                break
+                break;
+            case "about":
+                pageHeight = window.innerHeight * 5;
+                break;
             default:
                 break;
         }
@@ -41,7 +44,7 @@ const Navbar = () => {
             <span onClick={() => scrollToComponent("metabook")}>Metabook</span>
             <span onClick={() => scrollToComponent("olympus")}>Olympus Card-Jitsu</span>
             <span onClick={() => scrollToComponent("nypd") }>Visualizing NYPD Arrest Data</span>
-            <span>About</span>
+            <span onClick={() => scrollToComponent("about")}>About</span>
         </nav>
     );
 };
