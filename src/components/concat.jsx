@@ -36,7 +36,7 @@ const Concat = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 };
 
-export default Concat
+export default Concat;
