@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0429a066.css",
-    "main.js": "/static/js/main.10e498a8.js",
+    "main.js": "/static/js/main.088fa8da.js",
     "static/media/olympus.png": "/static/media/olympus.b960e4d9cea7a4447106.png",
     "static/media/olympus_mobile.png": "/static/media/olympus_mobile.d163be1e0b2b584023ce.png",
     "static/media/metabook_wall.png": "/static/media/metabook_wall.07cc0ae824926cffc171.png",
@@ -20,10 +20,10 @@
     "static/media/concat_logo.png": "/static/media/concat_logo.7bf680b4ffb39169b9b7.png",
     "index.html": "/index.html",
     "main.0429a066.css.map": "/static/css/main.0429a066.css.map",
-    "main.10e498a8.js.map": "/static/js/main.10e498a8.js.map"
+    "main.088fa8da.js.map": "/static/js/main.088fa8da.js.map"
   },
   "entrypoints": [
     "static/css/main.0429a066.css",
-    "static/js/main.10e498a8.js"
+    "static/js/main.088fa8da.js"
   ]
 }
