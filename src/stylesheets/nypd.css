@@ -12,6 +12,6 @@
     #nypd > :last-child{
         content: url("../images/nypd_pie.png");
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
 }

@@ -35,7 +35,15 @@ const Home = () => {
 
             <h1 className="word">Jonathan Zhou</h1>
 
-            <div id="gotohome">dboqwbfdoqwbofbdqow</div>
+            <div id="gotohome">Nothing to see here</div>
+
+            <div className="swipe-down-div">
+                <img 
+                    src="https://cdn-icons-png.flaticon.com/512/25/25623.png" 
+                    alt="swipe down" 
+                    className="swipe-down"
+                />
+            </div>
         </div>
     );
 };

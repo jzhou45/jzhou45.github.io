@@ -65,15 +65,50 @@
     margin-top: -44px;
 }
 
+.swipe-down-div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 70vh;
+    left: calc(50vw - 25px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+.swipe-down{
+    height: 30px;
+    width: 30px;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-25px); }
+    100% { transform: translateY(0); }
+} 
+
 @media only screen and (max-width: 600px) {
-    #home, .home-carousel, .home-carousel div{
+    #home{
         height: 100vh;
         width: 100vw;
     }
 
+    .home-carousel > div{
+        display: none;
+    }
+
+    .swipe-down-div{
+        display: flex;
+    }
+
     .word{
         left: calc(50vw - 170px);
-        top: calc(50vh - 40px);
+        top: calc(40vh - 40px);
         font-size: 40px;
         width: 340px;
         height: 40px;
