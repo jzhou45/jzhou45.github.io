@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0429a066.css",
-    "main.js": "/static/js/main.088fa8da.js",
+    "main.css": "/static/css/main.ac2fecdd.css",
+    "main.js": "/static/js/main.9ed71f5c.js",
     "static/media/olympus.png": "/static/media/olympus.b960e4d9cea7a4447106.png",
     "static/media/olympus_mobile.png": "/static/media/olympus_mobile.d163be1e0b2b584023ce.png",
     "static/media/metabook_wall.png": "/static/media/metabook_wall.07cc0ae824926cffc171.png",
@@ -19,11 +19,11 @@
     "static/media/nypd_pie.png": "/static/media/nypd_pie.864fc4561e4e3beb13c6.png",
     "static/media/concat_logo.png": "/static/media/concat_logo.7bf680b4ffb39169b9b7.png",
     "index.html": "/index.html",
-    "main.0429a066.css.map": "/static/css/main.0429a066.css.map",
-    "main.088fa8da.js.map": "/static/js/main.088fa8da.js.map"
+    "main.ac2fecdd.css.map": "/static/css/main.ac2fecdd.css.map",
+    "main.9ed71f5c.js.map": "/static/js/main.9ed71f5c.js.map"
   },
   "entrypoints": [
-    "static/css/main.0429a066.css",
-    "static/js/main.088fa8da.js"
+    "static/css/main.ac2fecdd.css",
+    "static/js/main.9ed71f5c.js"
   ]
 }
