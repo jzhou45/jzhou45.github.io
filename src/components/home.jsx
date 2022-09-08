@@ -17,6 +17,7 @@ const Home = () => {
                 showThumbs={false} 
                 showStatus={false}
                 showArrows={false}
+                swipeable={false}
                 className="home-carousel"
             >
                 <div>
