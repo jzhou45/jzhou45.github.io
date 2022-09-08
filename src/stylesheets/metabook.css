@@ -8,3 +8,20 @@
     font-size: 30px;
     color: #1977f2;
 }
+
+@media only screen and (max-width: 600px) {
+    #metabook, #nypd{
+        width: 100vw;
+        height: 130vh;
+        flex-direction: column-reverse;
+    }
+
+    #metabook img{
+        display: none;
+    }
+
+    #metabook > :last-child{
+        content: url("../images/metabook_wall.png");
+        object-fit: cover;
+    }
+}

@@ -8,3 +8,15 @@
     font-size: 30px;
     color: #c6934b;
 }
+
+@media only screen and (max-width: 600px) {
+    #olympus img{
+        display: none;
+    }
+
+    #olympus > :first-child{
+        content: url("../images/olympus_mobile.png");
+        width: 100%;
+        object-fit: cover;
+    }
+}

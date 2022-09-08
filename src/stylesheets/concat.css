@@ -24,6 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 1.2;
 }
 
 #concat img, #metabook img, #olympus img, #nypd img{
@@ -65,4 +66,48 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+    #concat, #olympus, #about{
+        width: 100vw;
+        height: 130vh;
+        flex-direction: column;
+    }
+
+    #concat > :first-child, .concat-about, 
+    .metabook-about, #metabook > :last-child, 
+    #olympus > :first-child, .olympus-about,
+    .nypd-about, #nypd > :last-child,
+    #about > :first-child, .about{
+        height: 50%;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #concat h1, #metabook h1, #olympus h1, #nypd h1, #about h1{
+        text-align: center;
+    }
+    
+    #concat img{
+        display: none;
+    }
+
+    #concat > :first-child{
+        content: url("../images/concat_logo.png");
+        object-fit: contain;
+    }
+
+    .concat-about > div, .metabook-about > div, .olympus-about > div, .nypd-about > div{
+        width: 90%;
+    }
+
+    #concat .link-buttons, #metabook .link-buttons, #olympus .link-buttons,
+    #nypd div.link-buttons, #about .link-buttons {
+        align-items: center;
+        justify-content: center;
+    }
+
 }

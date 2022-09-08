@@ -7,13 +7,6 @@ const Navbar = () => {
             behavior: "smooth"
         });
     };
-
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0, 
-            behavior: 'smooth'
-        });
-    };
     
     return(
         <nav className="navbar">

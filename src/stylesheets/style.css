@@ -33,11 +33,15 @@ body{
     position: relative;
 }
 
-
-
 .is-visible {
     opacity: 1;
     transform: none;
     visibility: visible;
     display: flex; 
-  }
+}
+
+@media only screen and (max-width: 600px) {
+    .fades > *{
+        height: 160vh;
+    }
+}
