@@ -1,11 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.ac2fecdd.css",
-    "main.js": "/static/js/main.9ed71f5c.js",
+    "main.css": "/static/css/main.4262478e.css",
+    "main.js": "/static/js/main.a20568ba.js",
     "static/media/olympus.png": "/static/media/olympus.b960e4d9cea7a4447106.png",
+    "static/media/searchbar.gif": "/static/media/searchbar.9ab0bd9c133c22b5b269.gif",
+    "static/media/profile.gif": "/static/media/profile.aa441abf6264c67f5753.gif",
+    "static/media/metabook_newsfeed.gif": "/static/media/metabook_newsfeed.67e89e31cd3e30e8e8f8.gif",
+    "static/media/likes.gif": "/static/media/likes.8d5411383552d11005e3.gif",
     "static/media/olympus_mobile.png": "/static/media/olympus_mobile.d163be1e0b2b584023ce.png",
-    "static/media/metabook_wall.png": "/static/media/metabook_wall.07cc0ae824926cffc171.png",
+    "static/media/crud_posts.gif": "/static/media/crud_posts.11623733590d47f77559.gif",
+    "static/media/comments_and_replies.gif": "/static/media/comments_and_replies.660bbe9b98473ba0a9d5.gif",
+    "static/media/make_posts.gif": "/static/media/make_posts.7a14ecdef13ce11e97e1.gif",
     "static/media/concat.png": "/static/media/concat.4a01e30b6b8dbb93b433.png",
+    "static/media/metabook_wall.png": "/static/media/metabook_wall.b06feeb9905efbaba2a2.png",
     "static/media/San_Francisco_Bold.otf": "/static/media/San_Francisco_Bold.b1f4d2c69fa808ebca12.otf",
     "static/media/me.png": "/static/media/me.b9e48c20b49c4e0d22e5.png",
     "static/media/San_Francisco.otf": "/static/media/San_Francisco.6a39aa208dfcb99af10a.otf",
@@ -13,17 +20,17 @@
     "static/media/SFPro_italics.ttf": "/static/media/SFPro_italics.c3f87b85b9a568668b44.ttf",
     "static/media/Poppins-Bold.ttf": "/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "static/media/Manrope-SemiBold.ttf": "/static/media/Manrope-SemiBold.72165e8d34a525e0f53e.ttf",
-    "static/media/Jonathan_Zhou_Resume.pdf": "/static/media/Jonathan_Zhou_Resume.d1d1d1bb2da0ed437ddc.pdf",
+    "static/media/Jonathan_Zhou_Resume.pdf": "/static/media/Jonathan_Zhou_Resume.6a2c6e7b830a5de7c2f1.pdf",
     "static/media/CaesarDressing-Regular.ttf": "/static/media/CaesarDressing-Regular.cb871c24c07ea21d0988.ttf",
     "static/media/metabook.png": "/static/media/metabook.ab76e00986843fb31e29.png",
     "static/media/nypd_pie.png": "/static/media/nypd_pie.864fc4561e4e3beb13c6.png",
     "static/media/concat_logo.png": "/static/media/concat_logo.7bf680b4ffb39169b9b7.png",
     "index.html": "/index.html",
-    "main.ac2fecdd.css.map": "/static/css/main.ac2fecdd.css.map",
-    "main.9ed71f5c.js.map": "/static/js/main.9ed71f5c.js.map"
+    "main.4262478e.css.map": "/static/css/main.4262478e.css.map",
+    "main.a20568ba.js.map": "/static/js/main.a20568ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac2fecdd.css",
-    "static/js/main.9ed71f5c.js"
+    "static/css/main.4262478e.css",
+    "static/js/main.a20568ba.js"
   ]
 }
