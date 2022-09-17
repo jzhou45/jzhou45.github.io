@@ -1,6 +1,14 @@
 import React from "react";
 import metabook from "../images/metabook.png";
 import "../stylesheets/metabook.css"
+import { Carousel } from "react-responsive-carousel";
+import newsfeed from "../images/metabook_newsfeed.gif";
+import makePosts from "../images/make_posts.gif";
+import commentsAndReplies from "../images/comments_and_replies.gif";
+import likes from "../images/likes.gif";
+import crudPosts from "../images/crud_posts.gif";
+import profile from "../images/profile.gif";
+import searchbar from "../images/searchbar.gif";
 
 const Metabook = () => {
     return(
@@ -32,9 +40,48 @@ const Metabook = () => {
                 </div>
             </div>
 
-            <div>
-                <img src={metabook} alt="metabook" />
-            </div>
+            <Carousel
+                infiniteLoop 
+                autoPlay	
+                interval={8000} 
+                stopOnHover={false} 
+                showThumbs={false} 
+                showStatus={false}
+                showArrows={false}
+                swipeable={false}
+            >
+                <div>
+                    <img src={metabook} alt="metabook" />
+                </div>
+
+                <div>
+                    <img src={newsfeed} alt="newsfeed" />
+                </div>
+
+                <div>
+                    <img src={makePosts} alt="make posts" />
+                </div>
+
+                <div>
+                    <img src={commentsAndReplies} alt="comments and replies" />
+                </div>
+
+                <div>
+                    <img src={likes} alt="likes" />
+                </div>
+
+                <div>
+                    <img src={crudPosts} alt="crud posts" />
+                </div>
+
+                <div>
+                    <img src={profile} alt="profile" />
+                </div>
+
+                <div>
+                    <img src={searchbar} alt="search bar" />
+                </div>
+            </Carousel>
         </div>
     );
 };
