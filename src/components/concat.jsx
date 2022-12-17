@@ -36,7 +36,7 @@ const Concat = () => {
 
                     <div className="link-buttons">
                         <a href="https://github.com/jzhou45/.concat" target="_blank" className="bbutton">GitHub</a>
-                        <a href="https://concat-mern.herokuapp.com/#/" target="_blank" className="abutton">Demo</a>
+                        <a href="https://concat.herokuapp.com/#/" target="_blank" className="abutton">Demo</a>
                     </div>
                 </div>
             </div>
