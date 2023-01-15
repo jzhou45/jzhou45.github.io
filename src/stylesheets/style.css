@@ -5,13 +5,15 @@
 
 body{
     font-family: "San Francisco";
+    background-color: #202124;
+    color: #bdc1c5;
 }
 
 .components{
     display: flex;
     flex-direction: column;
     overflow: scroll;
-    height: 100vh;
+    /* height: 100vh; */
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
 }
