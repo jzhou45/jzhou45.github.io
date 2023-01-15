@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4262478e.css",
-    "main.js": "/static/js/main.57484eaf.js",
+    "main.css": "/static/css/main.b9799599.css",
+    "main.js": "/static/js/main.c478210d.js",
     "static/media/olympus.png": "/static/media/olympus.b960e4d9cea7a4447106.png",
     "static/media/searchbar.gif": "/static/media/searchbar.9ab0bd9c133c22b5b269.gif",
     "static/media/profile.gif": "/static/media/profile.aa441abf6264c67f5753.gif",
@@ -13,24 +13,23 @@
     "static/media/make_posts.gif": "/static/media/make_posts.7a14ecdef13ce11e97e1.gif",
     "static/media/concat.png": "/static/media/concat.4a01e30b6b8dbb93b433.png",
     "static/media/metabook_wall.png": "/static/media/metabook_wall.b06feeb9905efbaba2a2.png",
-    "static/media/San_Francisco_Bold.otf": "/static/media/San_Francisco_Bold.b1f4d2c69fa808ebca12.otf",
     "static/media/me.png": "/static/media/me.b9e48c20b49c4e0d22e5.png",
     "static/media/San_Francisco.otf": "/static/media/San_Francisco.6a39aa208dfcb99af10a.otf",
     "static/media/nypd.png": "/static/media/nypd.37b6b06c9ce00e042b6e.png",
     "static/media/SFPro_italics.ttf": "/static/media/SFPro_italics.c3f87b85b9a568668b44.ttf",
     "static/media/Poppins-Bold.ttf": "/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "static/media/Manrope-SemiBold.ttf": "/static/media/Manrope-SemiBold.72165e8d34a525e0f53e.ttf",
-    "static/media/Jonathan_Zhou_Resume.pdf": "/static/media/Jonathan_Zhou_Resume.7da427334eff53647896.pdf",
+    "static/media/Jonathan_Zhou_Resume.pdf": "/static/media/Jonathan_Zhou_Resume.9ed43edcff0d100e3dcb.pdf",
     "static/media/CaesarDressing-Regular.ttf": "/static/media/CaesarDressing-Regular.cb871c24c07ea21d0988.ttf",
     "static/media/metabook.png": "/static/media/metabook.ab76e00986843fb31e29.png",
     "static/media/nypd_pie.png": "/static/media/nypd_pie.864fc4561e4e3beb13c6.png",
     "static/media/concat_logo.png": "/static/media/concat_logo.7bf680b4ffb39169b9b7.png",
     "index.html": "/index.html",
-    "main.4262478e.css.map": "/static/css/main.4262478e.css.map",
-    "main.57484eaf.js.map": "/static/js/main.57484eaf.js.map"
+    "main.b9799599.css.map": "/static/css/main.b9799599.css.map",
+    "main.c478210d.js.map": "/static/js/main.c478210d.js.map"
   },
   "entrypoints": [
-    "static/css/main.4262478e.css",
-    "static/js/main.57484eaf.js"
+    "static/css/main.b9799599.css",
+    "static/js/main.c478210d.js"
   ]
 }
