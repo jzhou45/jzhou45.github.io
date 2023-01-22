@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import "./stylesheets/reset.css";
-import "./stylesheets/style.css";
+import "./css_reset.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,3 +9,4 @@ root.render(
     <App />
   </React.StrictMode>
 );
+

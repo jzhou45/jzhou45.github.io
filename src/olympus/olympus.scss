@@ -1,0 +1,118 @@
+.olympus{
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .olympus-info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            color: #c6934b;
+            font-size: 10vh;
+            font-family: Caesar;
+            text-shadow: 0.03em 0.03em 5px white;
+
+            &:hover{
+              cursor: pointer;
+              font-size: 11vh;
+            }
+        }
+
+        span{
+            color: white;
+            font-family: "SFProI";
+            font-size: 3vh;
+        }
+    }
+
+    .hand{
+        img{
+            height: 30vh;
+            border-radius: 20px;
+            margin: 5vh 0.5vw;
+            transition: transform 0.5s ease-in-out;
+            z-index: 2;
+
+            &:hover{
+                cursor: pointer;
+                transform: translateY(-5vh);
+            }
+        }
+    }
+
+    .zeus{
+        position: absolute;
+        margin-top: -50vh;
+        margin-left: -80vw;
+        animation: easeIn 5s ease-in, rotate 45s linear infinite, twinkle 3s ease-in-out infinite;
+    }
+    
+    .medusa{
+        animation: easeIn 5s ease-in, rotate 25s linear infinite, twinkle 2s ease-in-out infinite;
+        position: absolute;
+        margin-top: 30vh;
+        margin-left: -80vw;
+    }
+    
+    .hera{
+        position: absolute;
+        animation: easeIn 5s ease-in, rotate 20s linear infinite, twinkle 2s ease-in-out infinite;
+        margin-top: -50vh;
+        z-index: 0;
+    }
+    
+    .heracles{
+        position: absolute;
+        animation: easeIn 5s ease-in, rotate 35s linear infinite, twinkle 3s ease-in-out infinite;
+        margin-top: -50vh;
+        margin-left: 70vw;
+    }
+
+    .dino{
+      position: absolute;
+      animation: easeIn 5s ease-in, rotate 35s linear infinite, twinkle 3s ease-in-out infinite;
+      margin-top: 30vh;
+      margin-left: 70vw;
+      object-fit: fill;
+      height: 25%;
+      width: 25%;
+      filter: brightness(2);
+    }
+
+    .hidden{
+        display: none;
+    }
+}
+
+@keyframes easeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes twinkle {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

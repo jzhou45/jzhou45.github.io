@@ -1,0 +1,65 @@
+@import url("../variables.scss");
+
+.home{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .name{
+        color: white;
+        font-family: Hacked;
+        font-size: 20vh;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-shadow: -0.033em -0.02em 1px rgba(255,0,0,0.67), 0.033em 0.02em 1px rgba(0, 255, 255, 0.67);
+    }
+
+    .astronaut{
+        height: 50%;
+        width: 50%;
+        animation: floating 2s ease-in-out infinite;
+        transform-origin: center bottom;
+
+        .astronaut1, .astronaut2, .astronaut3{
+            width: 100%;
+            height: 100%;
+            background-image: url(./astronaut.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            object-fit: fill;
+            transform: rotate(-25deg);
+            position: absolute;
+        }
+
+        .astronaut1{
+            z-index: 2;
+            left: -0.8vw;
+            top: -1.6vh;
+            filter: opacity(25%) invert(11%) sepia(94%) saturate(6619%) hue-rotate(4deg) brightness(108%) contrast(115%);
+        }
+
+        .astronaut3{
+            z-index: 2;
+            right: -1.3vw;
+            bottom: -1vh;
+            filter: opacity(25%) invert(100%) sepia(28%) saturate(6960%) hue-rotate(104deg) brightness(103%);
+        }
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, -20px, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+  }
+  

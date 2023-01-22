@@ -1,0 +1,16 @@
+.App{
+    background-color: black;
+    background-image: url(./stars-28.png);
+    animation: move-bg 500s linear infinite;
+    background-repeat: repeat;
+    overflow: hidden;
+}
+
+@keyframes move-bg {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -10000px;
+    }
+}

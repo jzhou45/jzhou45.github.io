@@ -1,0 +1,75 @@
+@import url("../variables.scss");
+
+.concat{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .images{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 65%;
+            height: 65%;
+            position: absolute;
+            border-radius: 10px;
+            filter: drop-shadow(0.033em 0.02em 20px #00FFFF);
+            transition: all 0.1s ease;
+            object-fit: contain;
+        }
+
+        .img1{
+            z-index: 1;
+        }
+
+        .img2{
+            z-index: 2;
+            margin: 5vh 0 0 5vw;
+        }
+
+        .img3{
+            z-index: 3;
+            margin: 10vh 0 0 10vw;
+        }
+
+        .img4{
+            z-index: 4;
+            margin: 15vh 0 0 15vw;
+        }
+
+        .img5{
+            z-index: 5;
+            margin: 20vh 0 0 20vw;
+        }
+    }
+
+    .concat-info{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 6;
+        width: 40%;
+        margin-right: 1%;
+
+        h1{
+            color: #90B8F8;
+            text-shadow: 0.03em 0.03em 5px white;
+            font-size: 10vh;
+            font-family: Manrope;
+            text-align: end;
+            
+            &:hover{
+                cursor: pointer;
+                font-size: 11vh;
+            }
+        }
+
+        span{
+            color: white;
+            text-align: end;
+            font-family: "SFProI";
+            font-size: 3vh;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import url("../variables.scss");
+
+.metabook{
+    margin-top: 20vh;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .metabook-info{
+        margin-bottom: 5vh;
+
+        h1{
+            font-size: 10vh;
+            color: #1977f2;
+            text-shadow: 0.03em 0.03em 5px white;
+            font-family: Poppins;
+            text-align: center;
+
+            &:hover{
+                cursor: pointer;
+                font-size: 11vh;
+            }
+        }
+
+        span{
+            color: white;
+            font-family: "SFProI";
+            font-size: 3vh;
+            text-align: center;
+        }
+    }
+
+    .car{
+        height: 65%;
+        width: 65%;
+
+        img{
+            border-radius: 10px;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import url("../variables.scss");
+
+.project{
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .scrolling-text1, .scrolling-text2, .scrolling-text3{
+    display: flex;
+    align-items: center;
+
+    span{
+      animation: scroll-infinitely 20s linear infinite;
+      color: white;
+      font-size: 15vh;
+      font-family: Hacked;
+      margin-left: 3vw;
+      animation-iteration-count: infinite;
+      text-shadow: -0.033em -0.02em 1px rgba(255,0,0,0.67), 0.033em 0.02em 1px rgba(0, 255, 255, 0.67);
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+  .scrolling-text1, .scrolling-text3{
+    margin-left: 30vw;
+  }
+}
+
+@keyframes scroll-infinitely {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
