@@ -1,0 +1,14 @@
+.blob {
+  width: 13rem;
+}
+
+.span-div {
+  display: flex;
+  justify-content: flex-end;
+  width: 25.7rem;
+  font-weight: 600;
+}
+
+.home {
+  margin-top: 5rem;
+}

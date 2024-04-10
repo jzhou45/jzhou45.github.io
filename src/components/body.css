@@ -1,0 +1,22 @@
+body {
+  background-color: #ffb467;
+  color: #583b39;
+  font-family: 'Inter';
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.alt-color {
+  color: #85695d;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+.left {
+  align-items: self-start;
+}

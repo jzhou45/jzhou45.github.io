@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+  margin: 2rem 0;
+}
+
+.header span {
+  border: 1px solid #85695d;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  width: 5rem;
+  text-align: center;
+}
+
+.header span:hover {
+  cursor: pointer;
+  background-color: #ffb467;
+  filter: brightness(0.8);
+}
+
+.focused {
+  background-color: #85695d;
+  color: #ffb467;
+}
+
+.header span.focused:hover{
+  filter: none;
+  background-color: #85695d;
+}
