@@ -9,6 +9,20 @@
   font-weight: 600;
 }
 
-.home {
+#Home {
   margin-top: 5rem;
+  animation: slideFromTop 1s ease forwards;
+  z-index: 0;
+  position: relative;
+}
+
+@keyframes slideFromTop {
+  0% {
+    opacity: 25%;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
 }

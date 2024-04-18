@@ -1,0 +1,38 @@
+#projects {
+  z-index: 2;
+  width: 100%;
+  background-color: #fac4a7;
+}
+
+.slide-up {
+  animation: slide-up 1s forwards;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.slide-down {
+  animation: slide-down 1s ease-out forwards;
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 100%;
+    transform: translate(0%, 0%);
+  }
+  100% {
+    opacity: 0%;
+    top: 100%;
+    transform: translate(0%, 100%);
+  }
+}
+
+.project {
+  margin-bottom: 1rem;
+}

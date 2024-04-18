@@ -4,7 +4,7 @@ import { ReactComponent as Blob } from './blob.svg'
 
 const Home = () => {
   return (
-    <div className='center home'>
+    <div id='Home' className='center'>
       <div className='center vertical left'>
         <h1>Hey, I'm <span className='alt-color'>Jonathan</span></h1>
         <div className='span-div'>

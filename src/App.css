@@ -7,4 +7,52 @@
 .wave {
   bottom: 0;
   position: absolute;
+  z-index: 1;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: #ffb467;
+}
+
+.up {
+  animation: moveUp 2s ease-in-out forwards;
+}
+
+@keyframes moveUp {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+
+.background-change {
+  height: 0;
+  width: 100vw;
+  background-color: #fac4a7;
+  bottom: 0;
+  transition: height 2s ease-in-out;
+  position: absolute;
+}
+
+.background-change.open {
+  height: 100vh;
+}
+
+.down {
+  animation: moveDown 2s ease-in-out forwards;
+}
+
+@keyframes moveDown {
+  0% {
+    bottom: 100vh;
+  }
+  100% {
+    bottom: 0;
+  }
 }
