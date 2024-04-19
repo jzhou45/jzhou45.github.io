@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d262927a.css",
+    "main.js": "/static/js/main.5234169d.js",
+    "static/media/olympus.png": "/static/media/olympus.a79a9b702e31835ff847.png",
+    "static/media/concat.png": "/static/media/concat.8b5f023ce509c92aed95.png",
+    "static/media/metabook.png": "/static/media/metabook.ab76e00986843fb31e29.png",
+    "static/media/duck.jpg": "/static/media/duck.3146c2ea3a184827e91d.jpg",
+    "index.html": "/index.html",
+    "static/media/blob.svg": "/static/media/blob.948662c7acd7de2c5b5451cccaf8b0ec.svg",
+    "static/media/wave.svg": "/static/media/wave.dceecde4ad0bd9fe944fb97cc8feaaa2.svg",
+    "main.d262927a.css.map": "/static/css/main.d262927a.css.map",
+    "main.5234169d.js.map": "/static/js/main.5234169d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d262927a.css",
+    "static/js/main.5234169d.js"
+  ]
+}
