@@ -1,6 +1,6 @@
 #projects {
   z-index: 2;
-  width: 100%;
+  width: 100vw;
   background-color: #fac4a7;
 }
 
@@ -35,4 +35,14 @@
 
 .project {
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .slide-down, .slide-up {
+    animation: none;
+  }
+
+  #projects {
+    align-self: flex-start;
+  }
 }

@@ -8,6 +8,11 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 .alt-color {
   color: #85695d;
 }
@@ -18,4 +23,10 @@ h1 {
 
 .left {
   align-items: self-start;
+}
+
+@media only screen and (max-device-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
 }

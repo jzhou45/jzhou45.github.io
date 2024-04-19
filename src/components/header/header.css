@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  width: 30rem;
+  width: 23rem;
   margin: 2rem 0;
   z-index: 3;
 }
@@ -14,10 +14,18 @@
   text-align: center;
 }
 
+.header span.alt-color {
+  border: 1px solid #c89c86;
+}
+
 .header span:hover {
   cursor: pointer;
   background-color: #ffb467;
   filter: brightness(0.8);
+}
+
+.header span.alt-color:hover {
+  background-color: #fac4a7;
 }
 
 .focused {
@@ -25,7 +33,21 @@
   color: #ffb467;
 }
 
-.header span.focused:hover{
+.focused.alt-color {
+  background-color: #c89c86;
+  color: #fac4a7;
+}
+
+.header span.focused:hover {
   filter: none;
   background-color: #85695d;
+}
+
+.header span.focused.alt-color:hover {
+  filter: none;
+  background-color: #c89c86;
+}
+
+@media only screen and (max-width: 767px) {
+
 }
