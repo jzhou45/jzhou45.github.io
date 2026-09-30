@@ -7,7 +7,8 @@ const Header = (props) => {
   const { page, onNavigate } = props
 
   const renderTab = (name) => {
-    const isActive = name === page
+    // The samplingNYC write-up lives under Projects.
+    const isActive = name === page || (name === 'Projects' && page === 'SamplingNYC')
     const className = isActive ? 'header__tab header__tab--active' : 'header__tab'
     return (
       <button key={name} className={className} aria-current={isActive ? 'page' : undefined} onClick={() => onNavigate(name)}>

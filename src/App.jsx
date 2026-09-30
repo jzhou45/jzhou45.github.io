@@ -4,6 +4,7 @@ import Header from './components/header/header'
 import Home from './components/body/home'
 import Projects from './components/projects/projects'
 import About from './components/about/about'
+import SamplingNYC from './components/samplingnyc/samplingnyc'
 import Footer from './components/footer/footer'
 import BobaTransition from './components/transition/boba-transition'
 
@@ -16,11 +17,13 @@ const PAGE_HASHES = {
   Home: '',
   Projects: '#projects',
   About: '#about',
+  SamplingNYC: '#samplingnyc',
 }
 
 const getPageFromHash = () => {
   if (window.location.hash === '#projects') return 'Projects'
   if (window.location.hash === '#about') return 'About'
+  if (window.location.hash === '#samplingnyc') return 'SamplingNYC'
   return 'Home'
 }
 
@@ -61,7 +64,8 @@ const App = () => {
   })
 
   const renderPage = () => {
-    if (page === 'Projects') return <Projects />
+    if (page === 'Projects') return <Projects onNavigate={handleNavigate} />
+    if (page === 'SamplingNYC') return <SamplingNYC />
     if (page === 'About') return <About />
     return <Home onNavigate={handleNavigate} />
   }

@@ -1,0 +1,152 @@
+.case-study {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-top: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.case-study__header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.case-study__title {
+  font-family: var(--font-display);
+  font-size: 72px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.case-study__lede {
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+.case-study__facts {
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.case-study__fact {
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.case-study__actions {
+  display: flex;
+  gap: 12px;
+}
+
+.case-study__button {
+  height: 48px;
+  padding: 0 22px;
+  font-size: 15px;
+}
+
+.case-study__section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-body);
+}
+
+.case-study__section h2 {
+  font-family: var(--font-display);
+  font-size: 36px;
+  line-height: 1.1;
+  font-weight: 500;
+  color: var(--tapioca);
+}
+
+.case-study__screens {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.case-study__screens--three {
+  margin-top: 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.case-study__compare {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.case-study__screens img {
+  width: 100%;
+  border-radius: 24px;
+  border: 1px solid var(--line);
+}
+
+.case-study__screens figcaption,
+.case-study__wireframe figcaption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.case-study__wireframe img {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 767px) {
+  .case-study {
+    padding-top: 36px;
+    gap: 40px;
+  }
+
+  .case-study__title {
+    font-size: 46px;
+  }
+
+  .case-study__lede {
+    font-size: 17px;
+  }
+
+  .case-study__facts {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .case-study__actions {
+    flex-direction: column;
+  }
+
+  .case-study__section {
+    font-size: 16px;
+  }
+
+  .case-study__section h2 {
+    font-size: 28px;
+  }
+
+  .case-study__screens,
+  .case-study__screens--three {
+    gap: 8px;
+  }
+
+  .case-study__screens img {
+    border-radius: 16px;
+  }
+}

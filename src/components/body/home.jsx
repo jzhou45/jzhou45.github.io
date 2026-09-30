@@ -31,7 +31,7 @@ const Home = (props) => {
           <div className='home__fact-value'>Software Engineer II at Optro</div>
         </div>
         <div className='home__fact'>
-          <div className='label'>Side project</div>
+          <div className='label'>Passion project</div>
           <a className='home__fact-value' href='https://samplingnyc.com' target='_blank' rel='noreferrer'>samplingnyc.com</a>
         </div>
         <div className='home__fact'>

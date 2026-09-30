@@ -31,7 +31,9 @@ const ProjectCard = (props) => {
   )
 }
 
-const Projects = () => {
+const Projects = (props) => {
+  const { onNavigate } = props
+
   return (
     <div className='projects'>
       <div className='projects__intro'>
@@ -66,6 +68,7 @@ const Projects = () => {
               Visit samplingnyc.com
               <ArrowUpRightIcon />
             </a>
+            <button className='button button--secondary featured__button' onClick={() => onNavigate('SamplingNYC')}>How I built it</button>
           </div>
         </div>
       </article>
