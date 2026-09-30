@@ -1,39 +1,139 @@
-.blob {
-  width: 13rem;
-}
-
-.span-div {
+.home {
+  min-height: calc(100vh - 88px);
   display: flex;
-  justify-content: flex-end;
-  width: 25.7rem;
-  font-weight: 600;
+  flex-direction: column;
 }
 
-#Home {
-  margin-top: 5rem;
-  animation: slideFromTop 1s ease forwards;
-  z-index: 0;
-  position: relative;
+.home__hero {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+  padding: 48px 0;
 }
 
-@keyframes slideFromTop {
-  0% {
-    opacity: 25%;
-    transform: translateY(-100%);
+.home__intro {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.home__title {
+  font-family: var(--font-display);
+  font-size: 104px;
+  line-height: 0.98;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.home__title em {
+  color: var(--brown-sugar);
+}
+
+.home__summary {
+  max-width: 600px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+.home__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.home__photo {
+  width: 480px;
+  flex-shrink: 0;
+  border-radius: 36px;
+  box-shadow: 16px 16px 0 var(--peach);
+}
+
+.home__facts {
+  padding: 28px 0 40px;
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 48px;
+}
+
+.home__fact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.home__fact-value {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 1100px) {
+  .home__title {
+    font-size: 80px;
   }
-  100% {
-    opacity: 100%;
-    transform: translateY(0);
+
+  .home__photo {
+    width: 360px;
   }
 }
 
-@media only screen and (max-device-width: 480px) {
-  #Home {
+@media (max-width: 767px) {
+  .home {
+    min-height: 0;
+  }
+
+  .home__hero {
     flex-direction: column;
-    animation: none;
+    align-items: stretch;
+    gap: 36px;
+    padding: 36px 0 32px;
   }
 
-  .span-div {
-    width: fit-content;
+  .home__intro {
+    gap: 20px;
+  }
+
+  .home__title {
+    font-size: 58px;
+    line-height: 1;
+  }
+
+  .home__summary {
+    font-size: 17px;
+  }
+
+  .home__actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home__photo {
+    width: calc(100% - 12px);
+    border-radius: 28px;
+    box-shadow: 12px 12px 0 var(--peach);
+  }
+
+  .home__facts {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    padding: 0 0 24px;
+  }
+
+  .home__fact {
+    padding: 18px 0;
+    gap: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .home__fact:last-child {
+    border-bottom: none;
+  }
+
+  .home__fact-value {
+    font-size: 17px;
   }
 }

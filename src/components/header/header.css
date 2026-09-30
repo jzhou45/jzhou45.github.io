@@ -1,53 +1,88 @@
 .header {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 88px;
+  box-sizing: border-box;
+  padding: 0 var(--page-gutter);
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  width: 23rem;
-  margin: 2rem 0;
-  z-index: 3;
+  border-bottom: 1px solid var(--line);
 }
 
-.header span {
-  border: 1px solid #85695d;
-  padding: .5rem 1rem;
-  border-radius: 5px;
-  width: 5rem;
-  text-align: center;
+.header__monogram {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--tapioca);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.header span.alt-color {
-  border: 1px solid #c89c86;
+.header__monogram:hover {
+  background: var(--brown-sugar);
 }
 
-.header span:hover {
-  cursor: pointer;
-  background-color: #ffb467;
-  filter: brightness(0.8);
+.header__nav {
+  display: flex;
+  gap: 4px;
+  padding: 5px;
+  background: var(--milk-foam);
+  border-radius: 999px;
 }
 
-.header span.alt-color:hover {
-  background-color: #fac4a7;
+.header__tab {
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
-.focused {
-  background-color: #85695d;
-  color: #ffb467;
+.header__tab:hover {
+  background: var(--line);
 }
 
-.focused.alt-color {
-  background-color: #c89c86;
-  color: #fac4a7;
+.header__tab--active,
+.header__tab--active:hover {
+  background: var(--tapioca);
+  color: var(--cream);
 }
 
-.header span.focused:hover {
-  filter: none;
-  background-color: #85695d;
+.header__links {
+  display: flex;
+  gap: 4px;
 }
 
-.header span.focused.alt-color:hover {
-  filter: none;
-  background-color: #c89c86;
-}
+@media (max-width: 767px) {
+  .header {
+    height: auto;
+    padding-top: 12px;
+    padding-bottom: 0;
+    border-bottom: none;
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
 
-@media only screen and (max-width: 767px) {
+  .header__links {
+    gap: 0;
+  }
 
+  .header__nav {
+    order: 3;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 4px;
+  }
+
+  .header__tab {
+    height: 44px;
+    padding: 0;
+  }
 }

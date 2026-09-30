@@ -1,69 +1,339 @@
-#About {
-  width: 100vw;
-  background-color: #fac4a7;
+.about {
+  padding-top: 72px;
+  display: grid;
+  grid-template-columns: 440px minmax(0, 1fr);
+  gap: 96px;
+  align-items: start;
 }
 
-.links {
-  align-self: flex-end;
+.about__profile {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
-a {
-  align-self: flex-end;
+.about__photo {
+  width: 400px;
+  max-width: calc(100% - 14px);
+  border-radius: 32px;
+  box-shadow: 14px 14px 0 var(--peach);
+}
+
+.about__intro {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about__name {
+  font-family: var(--font-display);
+  font-size: 56px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.about__summary {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+.about__links {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--line);
+}
+
+.about__link {
+  height: 56px;
+  box-sizing: border-box;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-bottom: 1px solid var(--line);
+  color: var(--tapioca);
   text-decoration: none;
-  color: #85695d;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-#About img {
-   width: 20rem;
-   margin: 3rem 0;
-   box-shadow:  10px 10px 0px white;
+.about__link:hover {
+  background: var(--milk-foam);
 }
 
-.education, .experience {
-  width: 30rem;
+.about__link-text {
+  flex-grow: 1;
 }
 
-.left {
-  align-self: flex-start;
+.about__hobbies {
+  padding: 24px;
+  border-radius: 20px;
+  background: var(--matcha-foam);
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-a.left {
-  margin: 0.5rem 0;
+.about__hobbies--desktop {
+  display: flex;
 }
 
-span.left {
-  margin-top: -0.25rem;
+.about__hobbies--mobile {
+  display: none;
 }
 
-i.left {
-  margin: 0.5rem 0;
+.about__details {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
 }
 
-ul {
-  margin-top: 0;
+.about__section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-li {
-  list-style-type: disc;
-  line-height: 1.25;
+.about__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
-ul ul li {
-  list-style: circle;
+.about__heading-title {
+  font-family: var(--font-display);
+  font-size: 44px;
+  line-height: 1.05;
+  font-weight: 500;
 }
 
-i {
-  font-style: italic;
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding-left: 48px;
 }
 
-@media only screen and (max-device-width: 480px) {
-  #About {
-    z-index: 2;
-    align-self: flex-start;
-    background-color: #fac4a7;
+/* The matcha line reads as a straw connecting the pearls. */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 10px;
+  bottom: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: var(--matcha-foam);
+}
+
+.timeline__entry {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.timeline__entry p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+.timeline__stop {
+  position: absolute;
+  left: -48px;
+  top: 4px;
+  width: 32px;
+  height: 32px;
+}
+
+.timeline__stop--small {
+  left: -42px;
+  top: 6px;
+  width: 20px;
+  height: 20px;
+}
+
+.timeline__company {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.timeline__company h3 {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.timeline__company span {
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+.timeline__role {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about__schools {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.about__school {
+  padding: 24px;
+  border-radius: 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 15px;
+  color: var(--text-body);
+}
+
+.about__school-name {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--tapioca);
+}
+
+.about__toolbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 1100px) {
+  .about {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 56px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding-top: 36px;
+    gap: 40px;
   }
 
-  .education, .experience {
-    width: 20rem;
+  .about__profile {
+    gap: 20px;
+  }
+
+  .about__photo {
+    width: 240px;
+    border-radius: 28px;
+    box-shadow: 10px 10px 0 var(--peach);
+  }
+
+  .about__intro {
+    margin-top: 16px;
+  }
+
+  .about__name {
+    font-size: 44px;
+  }
+
+  .about__summary {
+    font-size: 17px;
+  }
+
+  .about__link {
+    height: 52px;
+    padding: 0;
+    font-size: 15px;
+  }
+
+  .about__link svg:last-child {
+    display: none;
+  }
+
+  .about__hobbies--desktop {
+    display: none;
+  }
+
+  .about__hobbies--mobile {
+    display: flex;
+    padding: 22px;
+    font-size: 15px;
+  }
+
+  .about__details {
+    gap: 40px;
+  }
+
+  .about__heading-title {
+    font-size: 34px;
+  }
+
+  .timeline {
+    gap: 32px;
+    padding-left: 40px;
+  }
+
+  .timeline::before {
+    left: 9px;
+    width: 8px;
+  }
+
+  .timeline__stop {
+    left: -40px;
+    top: 2px;
+    width: 26px;
+    height: 26px;
+  }
+
+  .timeline__stop--small {
+    left: -35px;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .timeline__company {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .timeline__company h3 {
+    font-size: 26px;
+  }
+
+  .timeline__role {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 17px;
+  }
+
+  .timeline__entry p {
+    font-size: 15px;
+  }
+
+  .about__schools {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .about__school {
+    padding: 20px;
+  }
+
+  .about__school-name {
+    font-size: 22px;
   }
 }

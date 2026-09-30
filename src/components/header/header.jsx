@@ -1,56 +1,33 @@
-import { useState } from 'react'
 import './header.css'
+import { GitHubIcon, LinkedInIcon, MailIcon } from '../icons/icons'
+
+const PAGES = ['Home', 'Projects', 'About']
 
 const Header = (props) => {
-  const {focused, setFocused, updateWave, setChildClass, waveClass, isMobileTimeout} = props
+  const { page, onNavigate } = props
 
-  const [disabled, setDisabled] = useState(false)
-
-  const isFocused = (value) => {
-    const className = []
-    if (focused === value) className.push('focused')
-    if (waveClass === 'wave up') className.push('alt-color')
-    return className.join(' ')
-  }
-
-  const handleClick = (value) => {
-    if (value === focused || disabled) return
-
-    setDisabled(true)
-
-    if (value !== 'Home') {
-      updateWave(true)
-    }
-
-    setChildClass('center slide-down')
-    
-    if (value === 'Home') {
-      setTimeout(() => {
-        setFocused(value)
-        updateWave(false)
-      }, isMobileTimeout(300))
-
-    } else if ((focused === 'Projects' && value === 'About') || (focused === 'About' && value === 'Projects')) {
-      setTimeout(() => {
-        setChildClass('center slide-up')
-        setFocused(value)
-      }, isMobileTimeout(300))
-    } else {
-      setChildClass('center slide-up')
-      setFocused(value)
-    }
-
-    setTimeout(() => {
-      setDisabled(false)
-    }, isMobileTimeout(2000))
+  const renderTab = (name) => {
+    const isActive = name === page
+    const className = isActive ? 'header__tab header__tab--active' : 'header__tab'
+    return (
+      <button key={name} className={className} aria-current={isActive ? 'page' : undefined} onClick={() => onNavigate(name)}>
+        {name}
+      </button>
+    )
   }
 
   return (
-    <div className="center header">
-      <span onClick={() => handleClick('Home')} className={isFocused('Home')}>Home</span>
-      <span onClick={() => handleClick('Projects')} className={isFocused('Projects')}>Projects</span>
-      <span onClick={() => handleClick('About')} className={isFocused('About')}>About</span>
-    </div>
+    <header className='header'>
+      <button className='header__monogram' aria-label='Jonathan Zhou, home' onClick={() => onNavigate('Home')}>jz</button>
+      <nav className='header__nav' aria-label='Main'>
+        {PAGES.map(renderTab)}
+      </nav>
+      <div className='header__links'>
+        <a className='icon-link' href='https://github.com/jzhou45' target='_blank' rel='noreferrer' aria-label='GitHub'><GitHubIcon /></a>
+        <a className='icon-link' href='https://www.linkedin.com/in/jonathanzhou77' target='_blank' rel='noreferrer' aria-label='LinkedIn'><LinkedInIcon /></a>
+        <a className='icon-link' href='mailto:jonathanzhou77@gmail.com' aria-label='Email'><MailIcon /></a>
+      </div>
+    </header>
   )
 }
 

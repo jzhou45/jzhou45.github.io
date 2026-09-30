@@ -1,61 +1,54 @@
-import {useCallback, useEffect, useState} from 'react'
-import './app.css'
-import Home from './components/body/home'
+import { useState } from 'react'
+import './App.css'
 import Header from './components/header/header'
-import {ReactComponent as Wave} from './components/body/wave.svg'
+import Home from './components/body/home'
 import Projects from './components/projects/projects'
 import About from './components/about/about'
+import Footer from './components/footer/footer'
+import BobaTransition from './components/transition/boba-transition'
+
+// The page swaps while the tea fully covers the screen, halfway through the animation.
+const PAGE_SWAP_DELAY_MS = 1000
+const TRANSITION_DURATION_MS = 2000
+
+const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
 const App = () => {
-  const [focused, setFocused] = useState('Home')
-  const [waveClass, setWaveClass] = useState('wave')
-  const [main, setMain] = useState(<Home />)
-  const [childClass, setChildClass] = useState('center slide-up')
-  const [width, setWidth] = useState(window.innerWidth);
+  const [page, setPage] = useState('Home')
+  const [isTransitioning, setIsTransitioning] = useState(false)
 
-  const handleWindowSizeChange = () => {
-    setWidth(window.innerWidth);
-  }
-  useEffect(() => {
-      window.addEventListener('resize', handleWindowSizeChange);
-      return () => {
-          window.removeEventListener('resize', handleWindowSizeChange);
-      }
-  }, []);
-
-  const isMobile = width <= 480
-  const isMobileTimeout = useCallback((time) => isMobile ? 0 : time, [isMobile])
-
-  useEffect(() => {
-    const components = {
-      'Home': <Home />,
-      'Projects': <Projects childClass={childClass} />,
-      'About': <About childClass={childClass} />,
-    }
-
-    setTimeout(() => {
-      setMain(components[focused])
-    }, isMobileTimeout(1000))
-  }, [childClass, focused, isMobileTimeout])
-
-  const updateWave = (bool) => {
-    if ((waveClass === 'wave' || waveClass === 'wave down') && bool) {
-      setWaveClass('wave up')
-    } else if (waveClass === 'wave up' && !bool) {
-      setWaveClass('wave down')
-    }
+  const showPage = (target) => {
+    setPage(target)
+    window.scrollTo(0, 0)
   }
 
-  const background = () => waveClass === 'wave up' ? 'background-change open' : 'background-change'
+  const handleNavigate = (target) => {
+    if (target === page || isTransitioning) return
+
+    if (prefersReducedMotion()) {
+      showPage(target)
+      return
+    }
+
+    setIsTransitioning(true)
+    setTimeout(() => showPage(target), PAGE_SWAP_DELAY_MS)
+    setTimeout(() => setIsTransitioning(false), TRANSITION_DURATION_MS)
+  }
+
+  const renderPage = () => {
+    if (page === 'Projects') return <Projects />
+    if (page === 'About') return <About />
+    return <Home onNavigate={handleNavigate} />
+  }
 
   return (
-    <div className='App vertical color-change'>
-      <div className={background()}></div>
-      <Header focused={focused} setFocused={setFocused} updateWave={updateWave} setChildClass={setChildClass} waveClass={waveClass} isMobileTimeout={isMobileTimeout}/>
-      <Wave className={waveClass} />
-      <div className='center main'>
-        {main}
-      </div>
+    <div className='app'>
+      <Header page={page} onNavigate={handleNavigate} />
+      <main className='page'>
+        {renderPage()}
+      </main>
+      {page !== 'Home' && <Footer />}
+      {isTransitioning && <BobaTransition />}
     </div>
   )
 }
