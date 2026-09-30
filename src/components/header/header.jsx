@@ -18,7 +18,6 @@ const Header = (props) => {
 
   return (
     <header className='header'>
-      <button className='header__monogram' aria-label='Jonathan Zhou, home' onClick={() => onNavigate('Home')}>jz</button>
       <nav className='header__nav' aria-label='Main'>
         {PAGES.map(renderTab)}
       </nav>

@@ -30,8 +30,4 @@ The site opens at [http://localhost:3000](http://localhost:3000).
 
 ## Deploying
 
-```sh
-npm run deploy
-```
-
-This builds the site and publishes the `build/` folder to the `gh-pages` branch, which GitHub Pages serves.
+Pushing to `main` deploys automatically. The GitHub Actions workflow in `.github/workflows/deploy.yml` builds the site and publishes it to GitHub Pages.

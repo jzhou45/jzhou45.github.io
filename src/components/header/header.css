@@ -11,24 +11,6 @@
   border-bottom: 1px solid var(--line);
 }
 
-.header__monogram {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--tapioca);
-  color: var(--cream);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.header__monogram:hover {
-  background: var(--brown-sugar);
-}
-
 .header__nav {
   display: flex;
   gap: 4px;
@@ -71,6 +53,7 @@
 
   .header__links {
     gap: 0;
+    margin-left: auto;
   }
 
   .header__nav {
