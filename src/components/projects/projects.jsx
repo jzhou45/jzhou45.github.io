@@ -1,7 +1,7 @@
 import './projects.css'
 import samplingnyc from './samplingnyc.png'
-import metabook from './metabook.png'
-import concat from './concat.png'
+import metabook from './metabook.jpg'
+import concat from './concat.jpg'
 import olympus from './olympus.jpg'
 import { ArrowUpRightIcon } from '../icons/icons'
 
@@ -49,7 +49,7 @@ const Projects = (props) => {
           </div>
           <h2 className='featured__title'>samplingNYC</h2>
           <p className='featured__description'>
-            Pulls free NYC events from several listing sites into one place. Swipe right to save an event, left to pass, and get a mapped route for the day.
+            Pulls free NYC events from several listing sites into one place. Swipe right to save an event and left to skip it, then turn your saved events into a plan for the day.
           </p>
           <ul className='featured__steps'>
             <li><span className='pearl featured__pearl' />Scheduled Playwright scrapers collect each day's events</li>
@@ -85,7 +85,7 @@ const Projects = (props) => {
         />
         <ProjectCard
           image={concat}
-          imageAlt='.concat shared code editor'
+          imageAlt='.concat room with a shared code editor and group chat'
           meta='App Academy · 2022 · Group project'
           title='.concat'
           description='Practice LeetCode problems together, with shared rooms, a live code editor, and real-time chat.'

@@ -5,15 +5,18 @@ import { ArrowRightIcon } from '../icons/icons'
 const Home = (props) => {
   const { onNavigate } = props
 
+  // A real href keeps "open in new tab" working; a normal click still plays the transition.
+  const handleSamplingNYCClick = (event) => {
+    event.preventDefault()
+    onNavigate('SamplingNYC')
+  }
+
   return (
     <div className='home'>
       <section className='home__hero'>
         <div className='home__intro'>
           <div className='eyebrow'>Software engineer · New York City</div>
           <h1 className='home__title'>Hi, I'm <em>Jonathan.</em></h1>
-          <p className='home__summary'>
-            I'm a software engineer at Optro, where I build the Risk Assessments features risk managers use to evaluate and track risk. On the side, I'm building samplingNYC, a daily list of free events in New York.
-          </p>
           <div className='home__actions'>
             <button className='button button--primary' onClick={() => onNavigate('Projects')}>
               See my projects
@@ -32,7 +35,7 @@ const Home = (props) => {
         </div>
         <div className='home__fact'>
           <div className='label'>Passion project</div>
-          <a className='home__fact-value' href='https://samplingnyc.com' target='_blank' rel='noreferrer'>samplingnyc.com</a>
+          <a className='home__fact-value' href='#samplingnyc' onClick={handleSamplingNYCClick}>samplingNYC</a>
         </div>
         <div className='home__fact'>
           <div className='label'>Off the clock</div>

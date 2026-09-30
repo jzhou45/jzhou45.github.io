@@ -32,7 +32,7 @@ const About = () => {
         </div>
         <div className='about__hobbies about__hobbies--desktop'>
           <div className='eyebrow'>Off the clock</div>
-          <p>Table tennis (I was president and coach of UB's club team), pickleball, basketball, and commissioner of the group chat's fantasy NBA league.</p>
+          <p>Table tennis (I was president and coach of UB's club team), pickleball, basketball, along with being commissioner of the group chat's fantasy NBA league.</p>
         </div>
       </aside>
 
@@ -106,7 +106,7 @@ const About = () => {
 
         <div className='about__hobbies about__hobbies--mobile'>
           <div className='eyebrow'>Off the clock</div>
-          <p>Table tennis (I was president and coach of UB's club team), pickleball, basketball, and commissioner of the group chat's fantasy NBA league.</p>
+          <p>Table tennis (I was president and coach of UB's club team), pickleball, basketball, along with being commissioner of the group chat's fantasy NBA league.</p>
         </div>
       </section>
     </div>

@@ -32,13 +32,6 @@
   color: var(--brown-sugar);
 }
 
-.home__summary {
-  max-width: 600px;
-  font-size: 20px;
-  line-height: 1.6;
-  color: var(--text-body);
-}
-
 .home__actions {
   display: flex;
   gap: 12px;
@@ -100,10 +93,6 @@
   .home__title {
     font-size: 58px;
     line-height: 1;
-  }
-
-  .home__summary {
-    font-size: 17px;
   }
 
   .home__actions {

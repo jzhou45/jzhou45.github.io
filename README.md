@@ -6,7 +6,7 @@ My personal portfolio: projects, experience, and samplingNYC.
 
 ## About the site
 
-A boba-themed single-page site with three pages: Home, Projects, and About. Switching pages plays a transition where milk tea pours over the screen, tapioca pearls drop in, and the drink drains away to reveal the next page. Visitors who have reduced motion turned on skip the animation.
+A boba-themed single-page site with three main pages (Home, Projects, and About), along with a samplingNYC case study under Projects. Switching pages plays a transition where milk tea pours over the screen, tapioca pearls drop in, and the drink drains away to reveal the next page. Visitors who have reduced motion turned on skip the animation.
 
 The layout is responsive, from phone width up to wide desktop screens.
 

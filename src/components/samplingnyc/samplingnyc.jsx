@@ -74,7 +74,7 @@ const SamplingNYC = () => {
           I wanted the app to cost as little as possible to run, so it has no server of its own, no database to pay for, and no user accounts. Instead, it works in four steps: a) three times a day, small programs called scrapers visit the event websites and copy down each event, running for free on GitHub where the code is stored, b) Gemini, Google's AI model, writes a short summary of each event, adds perk tags, and removes events that cost money or are listed twice, c) each day's events are saved as a simple data file right next to the code, which acts as the app's database, and d) the website reads those files to show the cards, while your saved events stay in your own browser, so you don't need an account.
         </p>
         <p>
-          I also tried to keep the AI costs low. The app sends Gemini several events at once instead of one at a time, and it checks for repeat events first, so Gemini never summarizes the same event twice. Due to this, the only bills are the web address – $10.46 a year – and about 40 cents a month for Gemini.
+          I also tried to keep the AI costs low. I chose Gemini 3.6 Flash as the model, as it was the cheapest one that could still do what I needed. The app also sends Gemini several events at once instead of one at a time, and it checks for repeat events first, so Gemini never summarizes the same event twice. Due to this, the only bills are the web address – $10.46 a year – and about $0.40 a month for Gemini.
         </p>
       </section>
 
@@ -104,7 +104,7 @@ const SamplingNYC = () => {
       <section className='case-study__section'>
         <h2>The redesign</h2>
         <p>
-          The first version had a bright, flat look inspired by Duolingo, but I wanted samplingNYC to feel less like a deal app and more like an insider guide. One of the reasons I decided to change the design was due to NYC for FREE's redesign, as their new look was similar to my original one, and I wanted samplingNYC to stand apart from them. In September, I rebranded it by having Claude act as a brand designer and ask me yes-or-no questions until we had a direction. The main user would be women in their 20s and 30s, and the app should feel upscale while still saying "free" up front.
+          The first version had a bright, flat look inspired by Duolingo, but I wanted samplingNYC to feel less like a deal app and more like an insider guide. One of the reasons I decided to change the design was NYC for FREE's redesign, as their new look was similar to my original one, and I wanted samplingNYC to stand apart from them. In September, I rebranded it by having Claude act as a brand designer and ask me yes-or-no questions until we had a direction. The main users would be women in their 20s and 30s, and the app should feel upscale while still saying "free" up front.
         </p>
         <div className='case-study__compare'>
           <div className='label'>Before · July 2026</div>
@@ -125,7 +125,7 @@ const SamplingNYC = () => {
       <section className='case-study__section'>
         <h2>How I built it</h2>
         <p>
-          Claude Code wrote all of the code. I drew the first design in Figma, under the app's working name, Free NYC Mapped, and made the decisions, such as which tools to use, how to run it for almost nothing, where to store the data, swiping as the main way to use the app, and every feature that was added or cut. I made the first change on July 24, 2026, and the site went live five days later on July 29.
+          I drew the first design in Figma, under the app's working name, Free NYC Mapped, and made the product and technical decisions, such as which tools to use, how to run it for almost nothing, where to store the data, swiping as the main way to use the app, and every feature that was added or cut. I then built it through agentic coding with Claude Code. I made the first change on July 24, 2026, and the site went live five days later on July 29.
         </p>
         <figure className='case-study__wireframe'>
           <img src={wireframe} alt='Figma wireframe of four screens: home with Today and Tomorrow buttons, a swipe card with go back, X, and check mark buttons, and the selected and removed event lists' />
